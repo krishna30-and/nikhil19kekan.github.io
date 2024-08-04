@@ -1,0 +1,10 @@
+int removeElement(int* nums, int numsSize, int val) {
+        int a,b=0;
+        for(int a=0; a<numsSize; a++){
+            if(val != *(nums+a)){
+                *(nums + b) = *(nums + a);
+                b++;
+            }
+        }
+        return b;
+    }
